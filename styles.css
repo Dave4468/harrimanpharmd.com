@@ -35,3 +35,23 @@ body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}nav a[aria-
 @media print{.page-cta{display:none}.home .hero{min-height:0}.contact-page{background:white}.contact-page h1 em{color:var(--ink)}}
 
 .contact .inquiry-title{font-size:1.5rem}
+
+/* Fit the complete desktop home to the viewport without clipping content. */
+@media screen and (min-width:1000px){
+.home{height:100svh;min-height:640px}
+.home .top .wrap{padding-block:20px}
+.home main{display:flex;flex-direction:column;min-height:0;flex:1 0 auto}
+.home .hero{min-height:0;flex:1;padding-top:18px}
+.home .hero>.wrap{display:flex;flex-direction:column;align-self:stretch}
+.home .hero .eyebrow{margin-bottom:12px}
+.home .hero-grid{flex:1;padding-block:16px 24px;gap:60px}
+.home .hero h1{font-size:clamp(3.3rem,min(6.1vw,9svh),5.6rem)}
+.home .hero-aside{margin-top:0}
+.home .lead{font-size:1rem;line-height:1.6}
+.home .hero-note{margin-top:14px}
+.home .hero-link{margin-top:18px}
+.home .hero-foot{padding-block:14px}
+.home .proof{padding-block:18px;gap:30px}
+.home .proof p:not(.eyebrow){font-size:.83rem}
+.home .footer-grid{padding-block:14px}
+}
