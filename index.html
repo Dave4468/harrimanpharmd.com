@@ -26,12 +26,12 @@
 .service-list li{position:relative}.service-list li:before{content:"";position:absolute;left:0;top:-1px;width:44px;height:2px;background:#937440;transform-origin:left}
 .portrait-frame{box-shadow:18px 18px 0 #dce3dc;position:relative}.principal-photo{padding-right:10px}.principal-photo figcaption{margin-top:9px}.hero-link span,.cv-link span,.nav-contact span{display:inline-block}.contact{background:radial-gradient(ellipse at 100% 100%,#25454d,transparent 70%),var(--navy)}
 @media(prefers-reduced-motion:no-preference){
-.hero-art{animation:arrive-art 1.8s ease-out both,float-art 20s 1.8s ease-in-out infinite}.hero h1 em:after{animation:draw-rule 2.3s .9s cubic-bezier(.2,.65,.3,1) both,underline-glow 6s 3.2s ease-in-out infinite}
+.hero-art{animation:arrive-art 1.8s ease-out both,float-art 20s 1.8s ease-in-out infinite}.hero h1 em:after{background-image:linear-gradient(90deg,transparent,rgba(245,225,184,.28),transparent),linear-gradient(90deg,var(--gold),transparent);background-size:45% 100%,100% 100%;background-repeat:no-repeat;background-position:35% 0,0 0;animation:draw-rule 1.3s .2s ease-out both,underline-drift 8s 1.5s ease-in-out infinite}
 .hero-link span,.cv-link span,.nav-contact span{transition:transform .25s ease}.hero-link:hover span,.cv-link:hover span,.nav-contact:hover span{transform:translate(3px,-3px)}
 .service-list li:before{transition:transform .35s ease}.service-list li:hover:before{transform:scaleX(2)}
 @keyframes arrive-art{from{opacity:0;transform:translateX(20px) rotate(-10deg)}to{opacity:.16;transform:translateX(0) rotate(-12deg)}}
 @keyframes float-art{0%,100%{transform:translate(0,0) rotate(-12deg)}33%{transform:translate(-18px,-14px) rotate(-9deg)}66%{transform:translate(8px,-24px) rotate(-14deg)}}
-@keyframes underline-glow{0%,100%{opacity:1;filter:brightness(1)}50%{opacity:.65;filter:brightness(1.15)}}
+@keyframes underline-drift{0%,100%{background-position:35% 0,0 0}50%{background-position:65% 0,0 0}}
 @keyframes draw-rule{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 }
 @media(max-width:650px){.hero-art{width:430px;height:430px;right:-210px;top:-20px}.service-art{height:90px;margin-bottom:20px}.portrait-frame{box-shadow:10px 10px 0 #dce3dc}}
