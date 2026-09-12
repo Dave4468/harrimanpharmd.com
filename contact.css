@@ -1,0 +1,30 @@
+/* Dedicated inquiry page, matching the main site's navy and gold palette. */
+.contact-page{min-height:100svh;display:flex;flex-direction:column;background:var(--navy)}
+.contact-page main{flex:1}
+.contact-page .contact{background:radial-gradient(ellipse at 100% 80%,#23434b 0,transparent 65%),var(--navy);padding-block:64px 76px}
+.contact-page .contact-grid{grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact-page .contact h1{font-size:clamp(2.8rem,4.15vw,4rem);line-height:1.16;letter-spacing:-.035em}
+.contact-page .contact h1 em{color:var(--gold)}
+.contact-page .inquiry{align-self:start;padding-top:23px}
+.contact-page .inquiry-title{font-size:2rem}
+.contact-page .form-intro{margin-top:15px;max-width:55ch}
+.form-fields{display:grid;grid-template-columns:1fr 1fr;gap:19px 20px;margin-top:27px}
+.field{min-width:0}.field.full{grid-column:1/-1}
+.field label{display:block;font-size:.78rem;color:var(--paper);margin-bottom:7px}
+.field label span{color:#bdcbcd;font-size:.68rem}
+.field input,.field textarea{display:block;width:100%;border:1px solid #71878b;border-radius:2px;background:#ffffff08;color:var(--paper);font:inherit;font-size:1rem;padding:10px 12px;line-height:1.45}
+.field input{min-height:46px}.field textarea{resize:vertical;min-height:120px}
+.field input::placeholder{color:#adbdc0;font-size:.82rem}
+.field input:focus-visible,.field textarea:focus-visible,.submit-inquiry:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.inquiry .form-note{font-size:.73rem;line-height:1.6;margin-top:19px;color:#bdcbcd}
+.form-note strong{font-weight:600;color:#e0e6e3}
+.submit-inquiry{display:flex;align-items:center;justify-content:space-between;gap:50px;background:var(--gold);border:1px solid var(--gold);color:var(--navy);font:inherit;font-size:.88rem;font-weight:600;padding:12px 19px;margin-top:24px;cursor:pointer;transition:background .2s}
+.submit-inquiry:hover{background:#e4cfa8}.submit-inquiry span{font-size:1.2rem}
+.inquiry .form-disclosure{font-size:.68rem;line-height:1.6;max-width:60ch;margin-top:17px}
+.receipt{max-width:650px;padding-block:80px 120px}.receipt h1{font-size:clamp(3rem,5vw,4rem)}.receipt p{color:#c6d4d4;margin-top:24px}.receipt .eyebrow{color:var(--gold)}.receipt a{color:var(--paper)}
+@media(max-width:950px){.contact-page .contact-grid{gap:40px}.contact-page .contact{padding-block:48px}}
+@media(max-width:700px){.contact-page .contact-grid{grid-template-columns:1fr;gap:42px}.contact-page .contact h1{font-size:clamp(2.65rem,8vw,3.7rem)}.contact-page .contact{padding-block:38px 50px}.contact-page .contact-address{font-size:1rem}}
+@media(max-width:420px){.form-fields{grid-template-columns:1fr}.submit-inquiry{width:100%}}
+@media(prefers-reduced-motion:reduce){.submit-inquiry{transition:none}}
+
+.contact-page nav .nav-contact[aria-current="page"]{text-decoration:none}
