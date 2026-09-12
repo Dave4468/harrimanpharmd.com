@@ -55,3 +55,20 @@ body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}nav a[aria-
 .home .proof p:not(.eyebrow){font-size:.83rem}
 .home .footer-grid{padding-block:14px}
 }
+
+/* Scrolling home: a generous opening followed by selected experience and inquiry. */
+.home.home-scroll{height:auto;min-height:100svh}
+.home-scroll main{display:block;flex:1}
+.home-scroll .hero{min-height:0;display:block;padding-top:48px}
+.home-scroll .hero>.wrap{display:block}
+.home-scroll .hero-grid{padding-block:28px 66px}
+.home-scroll .hero h1{font-size:clamp(3.4rem,6.1vw,5.6rem)}
+.home-scroll .hero .eyebrow{margin-bottom:23px}
+.home-scroll .lead{font-size:1.12rem;line-height:1.7}
+.home-scroll .hero-aside{margin-top:24px}
+.home-scroll .hero-foot{padding-block:18px}
+.home-experience .principal-grid{align-items:center}
+.home-experience h2{font-size:clamp(2.1rem,3.5vw,3.25rem)}
+.home-inquiry .inquiry{border:0;padding:0}
+.home-inquiry .inquiry>p:first-child{margin-top:0}
+@media(max-width:650px){.home-scroll .hero{padding-top:33px}.home-scroll .hero-grid{padding-block:8px 34px}.home-scroll .hero h1{font-size:clamp(2.7rem,10.3vw,4rem)}.home-scroll .lead{font-size:1rem}.home-scroll .hero-aside{margin-top:0}.home-experience .principal-grid{gap:32px}}
