@@ -9,24 +9,25 @@
 <link rel="canonical" href="https://harrimanpharmd.com/contact.html">
 <link rel="stylesheet" href="styles.css?v=55a1c35e2c81">
 
-<link rel="stylesheet" href="contact.css?v=1">
+<link rel="stylesheet" href="contact.css?v=2">
 </head>
 <body class="contact-page"><a class="skip" href="#main">Skip to content</a><header class="top"><div class="wrap"><a class="brand" href="/" aria-label="David Harriman, PharmD home"><strong>David Harriman<span class="degree">, PharmD</span></strong><span>Clinical consulting &amp; expert witness services</span></a><nav aria-label="Main navigation"><a href="/">Home</a><a href="practice.html">Practice</a><a href="experience.html">Background</a><a class="nav-contact" aria-current="page" href="contact.html">Contact <span aria-hidden="true">↗</span></a></nav></div></header><main id="main" tabindex="-1"><section class="section contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">Engagement inquiries</p><h1 id="contact-title">What does your case<br><em>need clarified?</em></h1><p class="contact-address"><a href="mailto:contact@harrimanpharmd.com?subject=Attorney%20consulting%20inquiry">contact@harrimanpharmd.com</a><br><a href="tel:+16264851259">(626) 485-1259</a></p><p class="small">Consulting nationwide<br>Travel by arrangement · Fees on request<br>CV available on request</p></div><div class="inquiry">
-<h2 class="inquiry-title">Start with the question</h2>
-<p class="form-intro">Share the general clinical question and your timeline to discuss fit and an initial scope of work.</p>
-<form action="https://formsubmit.co/contact@harrimanpharmd.com" method="POST" aria-label="Engagement inquiry">
+<h2 class="inquiry-title">Start with an introduction</h2>
+<p class="form-intro">Share your professional contact information, the service you need, and your timeline.</p>
+<p id="privacy-note" class="inquiry-privacy"><strong>For initial inquiries only. Do not include patient names, medical records, or confidential case information.</strong> Conflict screening and records transfer are arranged separately.</p>
+<form action="https://formsubmit.co/contact@harrimanpharmd.com" method="POST" aria-label="Engagement inquiry" aria-describedby="privacy-note">
 <input type="hidden" name="_subject" value="New engagement inquiry | harrimanpharmd.com">
 <input type="hidden" name="_next" value="https://harrimanpharmd.com/inquiry-received.html">
 <input type="hidden" name="_template" value="table">
 <div class="form-fields">
-<div class="field"><label for="name">Full name <span>(required)</span></label><input id="name" name="name" autocomplete="name" maxlength="150" required></div>
+<div class="field"><label for="name">Your name <span>(required)</span></label><input id="name" name="name" autocomplete="name" maxlength="150" required></div>
 <div class="field"><label for="firm">Firm / organization <span>(required)</span></label><input id="firm" name="firm" autocomplete="organization" maxlength="200" required></div>
-<div class="field"><label for="email">Email <span>(required)</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+<div class="field"><label for="email">Professional email <span>(required)</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
 <div class="field"><label for="phone">Phone <span>(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="50"></div>
-<div class="field full"><label for="deadline">Deadline or timeline <span>(optional)</span></label><input id="deadline" name="deadline" placeholder="For example, an initial review within two weeks" maxlength="200"></div>
-<div class="field full"><label for="question">What would you like clarified? <span>(required)</span></label><textarea id="question" name="question" rows="4" maxlength="3000" aria-describedby="privacy-note" required></textarea></div>
+<div class="field full"><label for="service">Service needed <span>(required)</span></label><select id="service" name="service" required><option value="" disabled selected>Select a service</option><option value="Clinical case review">Clinical case review</option><option value="Hospital pharmacy systems review">Hospital pharmacy systems review</option><option value="Expert opinions and testimony">Expert opinions and testimony</option><option value="CV or fee schedule">CV or fee schedule</option><option value="General inquiry">General inquiry</option></select></div>
+<div class="field full"><label for="deadline">Deadline or timeline <span>(optional)</span></label><input id="deadline" name="deadline" placeholder="For example, within two weeks or flexible" maxlength="100" aria-describedby="privacy-note"></div>
+<div class="field full"><label for="inquiry">Brief inquiry <span>(optional, 400 characters maximum)</span></label><p id="inquiry-help" class="field-help">General service or scheduling questions only. Please omit patient and case details.</p><textarea id="inquiry" name="inquiry" rows="3" maxlength="400" aria-describedby="privacy-note inquiry-help"></textarea></div>
 </div>
-<p id="privacy-note" class="form-note"><strong>Please omit patient names, records, and confidential case details.</strong> Conflict screening and secure records transfer are arranged separately.</p>
 <button class="submit-inquiry" type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
 <p class="small form-disclosure">An inquiry does not establish an engagement or reserve a deadline. This form is delivered by <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener">FormSubmit</a>.</p>
 </form>

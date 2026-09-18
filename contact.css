@@ -10,12 +10,15 @@
 .contact-page .form-intro{margin-top:15px;max-width:55ch}
 .form-fields{display:grid;grid-template-columns:1fr 1fr;gap:19px 20px;margin-top:27px}
 .field{min-width:0}.field.full{grid-column:1/-1}
-.field label{display:block;font-size:.78rem;color:var(--paper);margin-bottom:7px}
-.field label span{color:#bdcbcd;font-size:.68rem}
-.field input,.field textarea{display:block;width:100%;border:1px solid #71878b;border-radius:2px;background:#ffffff08;color:var(--paper);font:inherit;font-size:1rem;padding:10px 12px;line-height:1.45}
+.field label{display:block;font-size:.9rem;color:var(--paper);margin-bottom:7px}
+.field label span{color:#bdcbcd;font-size:.875rem}
+.field input,.field textarea,.field select{display:block;width:100%;border:1px solid #71878b;border-radius:2px;background:#ffffff08;color:var(--paper);font:inherit;font-size:1rem;padding:10px 12px;line-height:1.45}
+.field select{min-height:46px;color-scheme:dark}.field select option{background:var(--navy);color:var(--paper)}
+.inquiry .inquiry-privacy{border-left:3px solid var(--gold);background:#ffffff08;padding:14px 16px;margin-top:20px;font-size:1rem;line-height:1.55;color:var(--paper)}
+.inquiry .field-help{font-size:.875rem;line-height:1.5;color:#d2dcdb;margin:0 0 10px}
 .field input{min-height:46px}.field textarea{resize:vertical;min-height:120px}
 .field input::placeholder{color:#adbdc0;font-size:.82rem}
-.field input:focus-visible,.field textarea:focus-visible,.submit-inquiry:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.field input:focus-visible,.field textarea:focus-visible,.field select:focus-visible,.submit-inquiry:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .inquiry .form-note{font-size:.73rem;line-height:1.6;margin-top:19px;color:#bdcbcd}
 .form-note strong{font-weight:600;color:#e0e6e3}
 .submit-inquiry{display:flex;align-items:center;justify-content:space-between;gap:50px;background:var(--gold);border:1px solid var(--gold);color:var(--navy);font:inherit;font-size:.88rem;font-weight:600;padding:12px 19px;margin-top:24px;cursor:pointer;transition:background .2s}
