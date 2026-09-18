@@ -10,6 +10,9 @@
 .contact-page .form-intro{margin-top:15px;max-width:55ch}
 .form-fields{display:grid;grid-template-columns:1fr 1fr;gap:19px 20px;margin-top:27px}
 .field{min-width:0}.field.full{grid-column:1/-1}
+/* Keep paired inputs aligned even when one label wraps. */
+.field:not(.full){display:flex;flex-direction:column}
+.field:not(.full) label{flex:1}
 .field label{display:block;font-size:.9rem;color:var(--paper);margin-bottom:7px}
 .field label span{color:#bdcbcd;font-size:.875rem}
 .field input,.field textarea,.field select{display:block;width:100%;border:1px solid #71878b;border-radius:2px;background:#ffffff08;color:var(--paper);font:inherit;font-size:1rem;padding:10px 12px;line-height:1.45}
